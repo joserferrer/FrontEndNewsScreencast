@@ -116,7 +116,7 @@ a:focus{
 -----------------------------------------------*/
 
 .is-liked {
-	animation: flash 1.75s;
+	animation: flash 2s;
 }
 
 
