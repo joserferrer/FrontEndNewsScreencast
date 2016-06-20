@@ -45,6 +45,7 @@ p {
 
 a {
 	color: #ff4081;
+	transition: 0.2s ease-in-out;
 }
 
 a:active,
@@ -124,11 +125,22 @@ a:focus{
 -----------------------------------------------*/
 
 .form {
-	margin-bottom: 20px;
+	height: 0; /* pseudo state for the form input to be "hidden" */
+	margin-bottom: 20px; 
+	opacity: 0;
+	visibility: hidden;
+}
+
+.form.is-visible {
+	height: auto;  /* pseudo state for the form input to be "hidden" */
+	opacity: 1;
+	visibility: visible;
+	transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+
 }
 
 .form-label {
-	display: block;
+	display: block;   /* pseudo state for the form input to be "hidden" */
 	font-weight: bold;
 	margin-bottom: 5px;
 }
