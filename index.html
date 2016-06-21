@@ -20,14 +20,42 @@
 
     <main class='content'>
       <div class='container'>
+
             <header class='subheader'>
               <h1>Latest News</h1>
-              <p>The latest links in the front-end community. <a class='js-add-link' href="#">Add a link now!</a></p>
+              <p>The latest links in the front-end community. <a class='js-add-link' href='#'>Add a link now!</a></p>
               <form class='form js-form'>
                 <label class='form-label' for='form-link-input'>Add a story:</label>
                 <input class='form-input' type='text' id='form-link-input' />
               </form>
             </header>
+
+             <div class='modal js-modal'>
+          <div class='modal-media'>
+            <img class='pic-box' src='https://secure.gravatar.com/avatar/9f8be15f8700085f4df069162dd83bd6?s=500' alt='' />
+            <h3 class='modal-media-title'></h3>
+
+            <!--GRAVATAR LINK - https://secure.gravatar.com/avatar/9f8be15f8700085f4df069162dd83bd6?s=500-->
+
+          </div>
+          <div class='modal-content'>
+            <h3>About Me</h3>
+            <p>My name is Joss Rectitud. I am passionate in generating valuable user experiences and products.
+              Freelance designer, lover of all things UX and UI design/IoT/iOS & Front-End Development. Founder of 23-D.<br/>
+              <br/>
+              Follow me at <a href='https://twitter.com/jrectitudferrer'>@jossrectitud</a></p>
+
+            <ol class='news'>
+              <li class='news-item'>
+                <a class='news-link' href='#'>Frontend Design</a>
+              </li>
+              <li class='news-item'>
+                <a class='news-link' href='#'>JavaScript Modules: A Beginner's Guide</a>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class='modal-overlay js-modal-overlay'></div>
 
         <ol class='news'>
           <li class='news-item'>
@@ -35,7 +63,7 @@
             <ul class='news-meta'>
               <li class='news-meta-item'>
                 <em>Posted by:</em>
-                <a href='#'>Dan Denney</a>
+                <a class='js-show-modal' href='#'>Joss Rectitud</a>
               </li>
               <li class='news-meta-item'>
                 <a href='#'>2 comments</a>
@@ -196,8 +224,8 @@
           </li>
         </ol>
       </div>
-
     </main>
+
 <script src='https://code.jquery.com/jquery-3.0.0.min.js' integrity='sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=' crossorigin='anonymous'></script>
 <script src='app.js'></script>
 
