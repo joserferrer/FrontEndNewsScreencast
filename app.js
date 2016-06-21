@@ -5,7 +5,7 @@
 $(document).ready(function() {
 
 	/* -----------------------------------------------
-	        		Add Link
+	        		Like
 	-----------------------------------------------*/
 
 	$('.js-like').on('click', function(event) {
@@ -15,6 +15,21 @@ $(document).ready(function() {
 		.closest('.news-item')
 		.addClass('is-liked');
 	});
+
+	/* -----------------------------------------------
+	        		Add Link
+	-----------------------------------------------*/
+
+  	$('.js-add-link').on('click', function(event) {
+    	event.preventDefault();
+
+    $('.js-form').addClass('is-visible');
+  	});
+
+   	$('.js-add-link').on('click', function(event) {
+    	event.preventDefault(); 	
+    	$('.js-form').removeClass('is-visible');
+  	});
 
 	/* -----------------------------------------------
         			Modal
